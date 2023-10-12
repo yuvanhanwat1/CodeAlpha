@@ -1,0 +1,261 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #0e0d0d;
+}
+
+
+/* Navigation Bar Styles */
+nav {
+    /* background-color: #333; */
+    background-color: #fa41e7;
+    color: #fff;
+    text-align: right;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li.left {
+    float: left;
+    margin-right: 0; /* Remove the right margin for the first list item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+
+/* Home Section Styles with Background Image */
+.hero {
+    background-image: url('bg7.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    text-align: right;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 200px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.left {
+    order: 1; /* Change the order of the image to the left */
+    margin-right: 20px; /* Add some spacing between the image and text */
+}
+
+.right-content {
+    order: 2; /* Change the order of the text to the right */
+    flex: 1; /* Allow the text to expand and fill available space */
+    margin-right: 60px; /* Add margin to the right of the text content */
+    text-align: center;
+    font-size: larger;
+
+}
+
+
+/* About Section Styles */
+#about {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* Trending Topics Section Styles */
+#topics {
+    background-color: #635050;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#topics h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#topics ul {
+    list-style: none;
+}
+
+#topics ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+/* Latest Blog Posts Section Styles */
+#blog {
+    background-color: #01796f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.blog-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10%;
+    width: 80%;
+}
+
+.blog-post {
+    background-color: #fff;
+    width: calc(50% - 20px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+    background-color: #c3c7f3;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.blog-post h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0e6059;
+}
+
+.blog-post p {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #000;
+}
+
+.blog-post a {
+    color: #0e6059;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    background-color: #212121;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin: 3% 20% 3% 20%;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+#contact form button {
+    background-color: #fff;
+    color: #007BFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.blog-post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer Section Styles */
+footer{
+    color: #fff;
+}
