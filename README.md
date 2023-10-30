@@ -2,7 +2,8 @@
 CODE ALPHA INTERNSHIP - Web Development Tasks
 
 ### Task 1
-Landing page
+- Landing page
+- Login-Register form
 
 ### Task 2
-Login-Register form
+- Age Calculator
