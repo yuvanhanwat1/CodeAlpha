@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .calculator {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        input[type="date"] {
+            padding: 10px;
+            margin: 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 18px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <hr>
+        <h1>Age Calculator</h1>
+        <hr>
+        <label for="dob">Enter your Date of Birth:</label>
+        <input type="date" id="dob">
+        <br>
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+         function calculateAge() {
+            var dob = new Date(document.getElementById("dob").value);
+            var now = new Date();
+
+            var age = now.getFullYear() - dob.getFullYear();
+            var monthDiff = now.getMonth() - dob.getMonth();
+            var dayDiff = now.getDate() - dob.getDate();
+
+            if (dayDiff < 0) {
+                monthDiff--;
+                dayDiff += 30; // Assuming an average of 30 days per month
+            }
+            if (monthDiff < 0) {
+                age--;
+                monthDiff += 12;
+            }
+
+            document.getElementById("result").innerHTML = `${age} Years, ${monthDiff} Months, and ${dayDiff} Days`;
+        }
+    </script>
+</body>
+</html>
