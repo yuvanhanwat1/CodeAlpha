@@ -1,0 +1,151 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  border-left: 4px solid #04aa6d;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.col-25 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+button {
+  padding: 10px;
+  margin: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #04aa6d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#addBtn {
+  float: right;
+  margin-right: 6.6%;
+}
+
+#addBtn:hover {
+  background-color: #45a049;
+}
+
+#eventBtn {
+  background-color: #f5540a;
+  float: right;
+  margin-right: 6.6%;
+}
+
+#eventBtn:hover {
+  background-color: #d64a09;
+}
+
+#newEvent{
+  background-color: #f5540a;
+}
+
+#newEvent:hover{
+  background-color: #d64a09;
+}
+
+.delBtn {
+  background-color: red;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  #addBtn,
+  #eventBtn {
+    width: 100%;
+    margin: 5px;
+    float: none;
+  }
+}
+
+/* Events Styles */
+.event-item {
+  width: 750px;
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(191, 188, 188);
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#events-table th,
+#events-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#events-table th {
+  background-color: #f2f2f2;
+}
+
+#events-table button {
+  cursor: pointer;
+}

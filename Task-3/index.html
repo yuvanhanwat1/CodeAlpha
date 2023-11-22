@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Event Planning Website</title>
+</head>
+<body>
+    <header>
+        <h1>Event Planning Website</h1>
+    </header>
+
+    
+    <main>
+        <section id="create-event">
+            <h2>Create an Event</h2>
+            <form id="event-form">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="eventName">Event Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="eventName" placeholder="Event name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="eventDate">Event Date:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="eventDate" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="eventLocation">Event Location:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="eventLocation" placeholder="Pune, Maharastra" required></input>
+                    </div>
+                </div>
+
+                <div id="createBtn">
+                    <button id="addBtn" type="button" onclick="createEvent()">Create Event</button>
+                    
+                </div>
+                <div>
+                    <button id="eventBtn" onclick="showEvents()">Show Events</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;U1 2023 Event Planning Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

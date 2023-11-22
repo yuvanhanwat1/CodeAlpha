@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Event Planning Website</title>
+    </head>
+    <body>
+        <header>
+            <h1>Event Planning Website</h1>
+        </header>
+
+        <main>
+            <section id="events">
+                <h2>All Events</h2>
+
+                <div class="event-item">
+                    <div>
+                        <table id="events-table">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Event Name</th>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody id="notes"></tbody>
+                        </table>
+                        <br>
+                        <div>
+                            <button id="showAndHide" onclick="toggleShowHide()">Show
+                                Events</button>
+                        </div>
+                        <div>
+                            <button id="newEvent" onclick="createNewEvent()">Create
+                                New Event</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Event Planning Website</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
