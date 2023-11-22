@@ -7,3 +7,6 @@ CODE ALPHA INTERNSHIP - Web Development Tasks
 
 ### Task 2
 - Age Calculator
+- 
+### Task 3
+- Event Planning Website
