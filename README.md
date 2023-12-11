@@ -12,4 +12,4 @@ CODE ALPHA INTERNSHIP - Web Development Tasks
 - Event Planning Website
 
 ### Task 4
-- Music Player 
+- Music Player
