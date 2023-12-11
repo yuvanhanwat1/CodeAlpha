@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U1 Music Player</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Work in Progress</h3>
+
+<div id="music-player">
+  <h2>🎧 U1 Music Player 🎶</h2>
+  <hr>
+  <audio id="audio" controls>
+    <source src="" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div id="controls">
+    <button id="prev">⏮️</button>
+    <button id="play">▶️</button>
+    <button id="next">⏭️</button>
+    <input id="volume" type="range" min="0" max="1" step="0.1" value="1">
+    <span id="volume-icon">🔊</span>
+  </div>
+
+  <ul id="playlist"></ul>
+
+  <hr>
+
+  <div id="current-song">Now Playing: </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
