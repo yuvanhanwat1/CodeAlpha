@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Smart Home Automation System</title>
+</head>
+<body>
+    <header>
+        <h1>Smart Home Control</h1>
+    </header>
+
+    <main>
+        <section id="lights">
+            <h2>Lights</h2>
+            <button onclick="toggleLight()">Toggle Light</button>
+            <p id="lightsFeedback"></p>
+        </section>
+
+        <section id="thermostat">
+            <h2>Thermostat</h2>
+            <label for="temperatureInput">Set Temperature:</label>
+            <input type="number" id="temperatureInput" placeholder="Enter temperature">
+            <button onclick="setTemperature()">Set</button>
+            <p id="thermostatFeedback"></p>
+        </section>
+
+        <section id="camera">
+            <h2>Camera</h2>
+            <img src="" alt="Camera Feed" id="cameraFeed">
+            <p id="cameraFeedback"></p>
+        </section>
+
+        <section id="security">
+            <h2>Security System</h2>
+            <button onclick="toggleSecurity()">Toggle Security</button>
+            <p id="securityFeedback"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
