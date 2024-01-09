@@ -16,3 +16,6 @@ CODE ALPHA INTERNSHIP - Web Development Tasks
 
 ### Task 5
 - Book Library
+
+### Task 6
+- Smart Home Control System
